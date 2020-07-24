@@ -8,8 +8,6 @@
   <meta name="theme-color" content="#317EFB">
   <link rel="stylesheet" href="./styles.css">
   <link rel="manifest" href="./manifest.json">
-  <link rel="stylesheet" type="text/css" href="./add-to-homescreen-master/style/addtohomescreen.css">
-  <script src="./add-to-homescreen-master/src/addtohomescreen.js"></script>
   <script>
     (function (i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -19,21 +17,17 @@
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-156697805-8', 'auto');
-    ga('set', 'dimension1', 'online');
     ga('send', 'pageview');
   </script>
-  <title>Good News!</title>
+
+  <title>Bad News!</title>
 </head>
 
 <body>
   <header>
-    <h1>GooD News!</h1>
-    <select id='sourceSelector' value="the-times-of-india"></select>
+    <h1 onclick="location = index.html">Good news</h1>
+    <select id='sourceSelector'></select>
   </header>
-  <button class="add-button">Add to home screen</button>
-  <script>
-    addToHomescreen();
-  </script>
 
   <main></main>
   <script src="./app.js" type="module"></script>
